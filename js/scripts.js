@@ -1,13 +1,32 @@
 function validate() {
-    var dateOfBirth = document.getElementById("birth");
+    var dateOfBirth = document.getElementById ("birth");
     var peronality = document.getElementById("sex");
     var yearsOfBirth = document.getElementById("age");
 };
 
-var maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwatu", "Yaw", "Kofi", "Kwame"];
-var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-var DaysOfTheW
-var DaysOfTheWeek = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD) mod7;
+
+var dD = parseInt(dateOfBirth);
+var gender = "male, female";
+var daysOfTheWeek = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD)%7;
+
+
+
+if (gender == "male"  && dD == 0) {
+    alert ("You were born on Sunday and your Akan name is Kwasi");
+}
+
+else if (gender == "female" && dD == 0) {
+    alert ("you were born on Sunday and your Akan name is Akosua");
+}
+
+else if (gender == "male" && dD == 1) {
+    alert ("you were born on Monday and your Akan name is Kwadwo");
+}
+
+else if (gender == "female" && dD == 1) {
+    alert ("you were born on Monday and your Akan name is Adwoa");
+}
+
 
 
 
