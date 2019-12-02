@@ -24,3 +24,6 @@ When you want to view your Akan name, just type your date of birth, month, year 
 * Cell No.: 0792231660
 * Facebook: Jady Vella
 
+# License & Copyright
+- Licensed under [MIT LICENCE](LICENSE)
+Copyright (c) 2019 **Felix Ouma**
