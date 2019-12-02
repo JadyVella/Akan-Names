@@ -3,13 +3,10 @@ function validateForm() {
     var birthYear = document.forms["myForm"]["year"].value;
     var monthOfTheYear = document.forms["myForm"]["year"].value;
     var genderInput = document.forms["myForm"]["gender"].value;
-    if (genderInput == "") {
-        alert("select male or female");
+    if (genderInput == " ") {
+        alert("select male or female")
         return;
-
-    if (birthDate <=0 && birthDate > 31) {
-         alert("enter a valid date");
-    }
+    };
  
 var CC = parseInt(birthYear.slice(2));
 var YY = parseInt(birthYear.slice(0,2));
@@ -19,6 +16,10 @@ var dd = parseInt(birthDate);
 // var females = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 // var gender = "male, female";
 var day =  Math.ceil( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + dd )%7;
+
+if (dd <= 0 && dd > 31) {
+    alert("Enter a valid day");
+}
 
 if (genderInput == "male"  && day == 0) {
     alert("You were born on Sunday and your Akan name is kwasi");
