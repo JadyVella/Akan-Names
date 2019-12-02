@@ -6,3 +6,6 @@ This project translates the names to Akan name, an Akan names are names that are
 
 # Author Information
 The person who created this project and styled it is Felix Ouma.
+
+# Setup Instruction
+To view this webpage, follow this link: https://jadyvella.github.io/Akan-Names/.
