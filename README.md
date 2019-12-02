@@ -19,4 +19,8 @@ When you want to view your Akan name, just type your date of birth, month, year 
 * JavaScript
 * Bootstrap
 
-# 
+# Contact Information
+* Email: felixouma379@gmail.com
+* Cell No.: 0792231660
+* Facebook: Jady Vella
+
