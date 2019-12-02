@@ -2,22 +2,21 @@ function validate() {
     var birthDate = document.getElementById("birth");
     // var maleFemale = document.getElementById("sex");
     var birthYear = document.getElementById("age");
+    var monthOfTheYear = document.getElementById("mth");
  
-var CC = parseInt(birthDate.slice(0,2));
-var YY = parseInt(birthYear.slice(2));
-var MM = parseInt();
-var dd = parseInt("birthDate");
-var sex = prompt("Enter sex");
-//var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-//var females = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+var CC = parseInt(birthYear.slice(2));
+var YY = parseInt(birthYear.slice(0,2));
+var MM = parseInt(monthOfTheYear);
+var dd = parseInt(birthDate);
+var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var females = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+var gender = "male, female";
 
 var day =  Math.ceil( ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + dd )%7);
 
-if (sex = "male"  && day == 0) {
+if (gender = "male"  && day == 1) {
     alert("You were born on Sunday and your Akan name is kwasi");
-
-}
-else if (gender = "female" && day == 0) {
+}else if (gender = "female" && day == 0) {
     alert("You were born on Sunday and your Akan name is Akosua");
 }else if (gender = "male" && day == 1) {
     alert("You were born on Monday and your Akan name is Kwadwo");
@@ -44,8 +43,10 @@ else if (gender = "female" && day == 0) {
 }else if (gender = "female" && day == 6) {
     alert("You were born on Saturday and your Akan name is Ama");
 }
-
 }
+
+
+
 
 
 
