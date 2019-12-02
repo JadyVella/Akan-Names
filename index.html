@@ -13,7 +13,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="index.css">
 
-</head>
+</head> 
 
 <body class="container">
 
@@ -28,36 +28,38 @@
 
     </div>
 
-    <div class="card-body bg-success">
+    <div class = "card-body bg-success">
 
-        <form onsubmit="return validate()">
+        <form class="form" name = "myForm" onsubmit="return validateForm()">
 
-            <input class="bg-info" id="birth" placeholder="Date Of Birth" type="text" required /></br></br>
+            Date:  <br><input class="bg-info"  name="day" id="birth" type="text" min="1" max="31" /></br>
 
-            <input class="bg-info" id="mth" placeholder="Month Of Birth" type="text" required /></br></br>
+            Month: <br><input class="bg-info" id="mth" name="month" type="text" min="1" max="12" /></br>
 
-            <input class="bg-info" id="age" placeholder="Year Of Birth" type="text" required /></br></br>
+            Year:  <br><input class="bg-info" id="age" name="year"  type="text" min="1990" max="2019" /></br>
 
-            <input class="bg-info" id="sex" placeholder="Gender" type="text" required /></br></br>
+            <br><input type="radio" name="gender" value="male" id="male">male</br>
+            <input type="radio" name="gender" value="male" id="male">female</br>
 
             <button class="bg-danger" onclick="validate()" id="btn">Submit</button>
 
 
         </form>
 
-        </br></br></br></br></br></br></br></br></br></br></br>
+        </div>
+
 
 
         <footer class="card-footer bg-secondary">
 
             <div class="row">
-                <div class=>
+                <div class>
 
                     <h6 class="card-title col-md-6">Technologies</h6>
 
-                    HTML & CSS</br>
+                    HTML  CSS</br>
                     JavaScript</br>
-                    Bootstrap</br></br></br>
+                    Bootstrap</br>
 
                     <h6 class="card-title col-md-6">Contacts</h6>
 
@@ -71,9 +73,9 @@
 
         </footer>
 
-    </div>
 
     </div>
+
 
 </body>
 
